@@ -27,7 +27,11 @@ DEBUG = True
 
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'animated-disco-qvgprq7vpgj26x6g-8000.app.github.dev',
+]
 
 
 # Application definition

@@ -9,7 +9,8 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    base_url = 'http://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev/'
+    # Use the Codespace URL for API endpoints
+    base_url = 'https://animated-disco-qvgprq7vpgj26x6g-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',
